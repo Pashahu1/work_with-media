@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-size: 24px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.column {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: 1px solid blue;
+  background-color: azure;
+  padding: 10px;
+}
+
+
+@media (orientation:landscape) and (max-resolution:200dpi) {
+  .row {
+    flex-direction: row;
+  }
+  .column {
+    background-color: yellow;
+  }
+}
